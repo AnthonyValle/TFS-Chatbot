@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <center>
+    
+
+
+
+    <header>
+
+        <div> 
+
+            <h1>TFS Chatbot</h1>
+
+        </div>
+
+        <div> 
+
+            <h1>Created By AnthonyValle</h1>
+
+        </div>
+   
+
+    </header>
+
+    <section>
+
+        <div>
+
+            <h1>How It Works</h1>
+
+            <p>
+
+                This Chatbot was created using TFJS and uses a basic 
+                Nueral Network that decides on a responses based on the 
+                given inputs
+
+            </p>
+
+            <p>
+
+                The Network is trained using the JS file titled 'data.js' 
+                which contains an object called 'dic'
+
+            </p>
+
+            <p>
+
+                This object contains Patterns, Responses, and Context Sets/Filters 
+                that are use to make the conversation with the bot possible
+
+            </p>
+
+            <h3>
+
+                NOTE:This bot isn't trained for any advanced nor specific use, its simply a small 
+                ML project that was built to get my hands dirty with some nueral networks
+
+            </h3>
+
+            
+            <h4>
+
+                You can ask the bot for its name, age, or greet it with 'hello'
+
+            </h4>
+
+
+            <h4>
+
+                NOTE:If you greet the bot using 'Hello', you must answer its response of 
+                'hello how are you' with 'I am good', This is becuase the context is 
+                set to greetings and won't answer anything else until' the context is set back to normal
+            
+            </h4>
+
+            <h4>
+
+                If you want to retrain the model you can click the button titled 
+                'TRAIN' and view the console log to check the loss
+
+            </h4>
+
+        </div>
+
+    </section>
+
+
+
+ 
+
+
+    <button onclick='NN()'>TRAIN</button>
+
+    <p></p>
+
+
+    </center>
+</body>
+
+<script src='https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js'></script>
+<script src="front_end.js"></script>
+
+
+
+
+
+</html>
